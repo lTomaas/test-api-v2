@@ -1,7 +1,7 @@
-const {PORT} = require("../../config.js")
+import { PORT } from "../../config.js";
 
 
-fetch("http://localhost:${PORT}/api/empleados")
+fetch(`http://localhost:${PORT}/api/empleados`)
     .then(function (response) {
         return response.json();
     })
