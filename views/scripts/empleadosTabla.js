@@ -1,5 +1,6 @@
 //document.write(window.location + "api/empleados")
 
+const dominio = window.location.hostname;
 
 //Tengo que cambiar el dominio de donde hago fetch
 fetch(window.location + "api/empleados")
