@@ -1,4 +1,4 @@
-const {PORT} = require("./config.js")
+const {PORT} = require("../../config.js")
 
 
 fetch("http://localhost:${PORT}/api/empleados")
