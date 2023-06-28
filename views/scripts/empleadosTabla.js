@@ -1,7 +1,8 @@
-import { PORT } from "../../config.js";
+//document.write(window.location + "api/empleados")
 
 
-fetch(`http://localhost:${PORT}/api/empleados`)
+//Tengo que cambiar el dominio de donde hago fetch
+fetch(window.location + "api/empleados")
     .then(function (response) {
         return response.json();
     })
@@ -25,3 +26,4 @@ fetch(`http://localhost:${PORT}/api/empleados`)
     .catch(function (error) {
         console.error('Error en la solicitud', error);
     });
+    
