@@ -11,7 +11,7 @@ fetch("http://localhost:${PORT}/api/empleados")
         let tabla = document.getElementById("tabla-empleados");
         let out = "";
 
-        for (let book of books) {
+        for (let empleado of empleados) {
             out += `
                 <tr>
                     <td>${empleado.id} </td>
