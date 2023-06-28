@@ -11,6 +11,12 @@ conexion.connect((error) => {
     }
 });
 
+
+//Prueba
+router.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname, '../views/empleados.html'));
+})
+
 router.get('/api/empleados', async (req, res) => {
     conexion.query('SELECT * FROM empleados', function (error, results, fields) {
         if (error) {
