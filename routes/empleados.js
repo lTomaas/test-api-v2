@@ -2,6 +2,7 @@ const { Router } = require("express");
 var conexion = require("../db.js")
 
 const router = Router();
+const path = require('path');
 
 conexion.connect((error) => {
     if (error) {

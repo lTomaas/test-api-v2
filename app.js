@@ -3,6 +3,8 @@ const app = express();
 const empleadosRoute = require('./routes/empleados.js');
 const {PORT} = require("./config.js")
 
+const path = require('path');
+
 
 //settings
 app.use(express.static(__dirname+'/views'))
