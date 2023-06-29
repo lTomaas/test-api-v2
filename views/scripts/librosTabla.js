@@ -16,7 +16,6 @@ fetch(dominio)
         let tabla = document.getElementById("tabla-libros");
         let out = "";
 
-        document.write(libros)
         for (let libro of libros) {
             out += `
                 <tr>
