@@ -7,11 +7,12 @@ fetch(`http://${window.location.host}/api/libros`)
         return response.json();
     })
     .then(function (libros) {
+        document.write(libros)
         let tabla = document.getElementById("tabla-libros");
         let out = "";
 
+        document.write(libros)
         for (let libro of libros) {
-            document.write(libro.isbn)
             out += `
                 <tr>
                     <td>${libro.isbn} </td>
