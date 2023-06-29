@@ -11,6 +11,7 @@ fetch(`http://${window.location.host}/api/libros`)
         let out = "";
 
         for (let libro of libros) {
+            document.write(libro.isbn)
             out += `
                 <tr>
                     <td>${libro.isbn} </td>
