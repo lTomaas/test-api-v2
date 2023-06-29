@@ -4,10 +4,14 @@ const dominio = window.location.hostname;
 
 fetch(`http://${window.location.host}/api/libros`)
     .then(function (response) {
+        document.write(`http://${window.location.host}/api/libros`)
         return response.json();
+        document.write(`http://${window.location.host}/api/libros`)
     })
+
+
     .then(function (libros) {
-        document.write(libros)
+       
         let tabla = document.getElementById("tabla-libros");
         let out = "";
 
