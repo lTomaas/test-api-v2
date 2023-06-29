@@ -3,44 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/estilos/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/estilos/libros.css">
+    <link rel="stylesheet" type="text/css" href="/estilos/libros-v2.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
+
+
     <nav class="nav">
+
         <a href="/" class="link"> BIBLOTECA </a>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Buscar...">
+            <button id="search-button"><img src="imagenes/search.png"></button>
+        </div>
+
     </nav>
 
-    <main class="main">
-        <table>
-            <thead>
-                <tr>
-                    <th>ISBN</th>
-                    <th>TITULO</th>
-                    <th>AUTOR</th>
-                    <th>PRECIO</th>
-                    <th>IMAGEN</th>
-                </tr>
-            </thead>
-            <tbody id="tabla-libros">
 
-            </tbody>
-        </table>
+
+
+
+
+
+
+
+
+
+
+    <main>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Agrega más slides según sea necesario -->
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer>
         <div class="iconos">
             <div class="icono icono--ig">
                 <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
             </div>
+            <!--
             <div class="icono icono--twitter">
                 <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
             </div>
+            -->
             <div class="icono icono--linkedin">
                 <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
             </div>
@@ -50,9 +88,11 @@
         </div>
     </footer>
 
-
 </body>
 <script src="https://kit.fontawesome.com/86f6f7f6ea.js" crossorigin="anonymous"></script>
-<script src="scripts/librosTabla.js"></script>
+<script src="scripts/swiper.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 
 </html>

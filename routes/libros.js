@@ -10,6 +10,12 @@ router.get('/libros', (req,res) => {
     res.sendFile(path.join(__dirname, '../views/libros.html'));
 })
 
+router.get('/libros-v2', (req,res) => {
+    res.sendFile(path.join(__dirname, '../views/libros-v2.html'));
+})
+
+
+
 router.get('/api/libros', async (req, res) => {
     conexion.query('SELECT * FROM libros', function (error, results, fields) {
         if (error) {
@@ -20,6 +26,5 @@ router.get('/api/libros', async (req, res) => {
         }
     });
 });
-
 
 module.exports = router;

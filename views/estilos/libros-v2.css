@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(105, 105, 105);
+}
+
+
+
+.nav {
+    display: flex;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.863);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: rgba(248, 252, 255, 0.842);
+    margin-right: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 35px;
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+#search-bar {
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+
+    transition: background 0.75s;
+
+}
+
+
+#search-bar::placeholder {
+    color: white
+}
+
+#search-bar:hover {
+    background-color: #070606;
+}
+
+#search-button img {
+    width: 25px;
+}
+
+#search-button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #070606;
+    cursor: pointer;
+}
+
+
+
+
+
+main {
+    display: flex;
+    height: calc(100vh - 8rem);
+    align-items: center;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.img_libro {
+    width: 300px;
+    height: 450px;
+    border: 3px solid black;
+    margin-bottom: -50px;
+}
+
+.titulo {
+    text-align: center;
+    color: #070606;
+    padding: 10px;
+    margin-bottom: -20px;
+}
+
+.precio{
+    color: #070606
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.863);
+    text-align: center;
+}
+
+.iconos {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.icono {
+    display: inline-flex;
+    margin-left: 20px;
+    margin-top: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+}
+
+.icono:hover {
+    outline-offset: 4px;
+}
+
+.icono i {
+    margin: auto;
+}
+
+.icono:hover i {
+    animation: shake 0.25s;
+}
+
+.icono--ig:hover {
+    background-image: radial-gradient(circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%);
+    outline-color: #a02d76;
+}
+
+.icono--twitter:hover {
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.icono--linkedin:hover {
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+
+.icono--github:hover {
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}

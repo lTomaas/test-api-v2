@@ -25,7 +25,7 @@ fetch(dominio)
                     <td>${libro.isbn} </td>
                     <td>${libro.nombre} </td>
                     <td>${libro.autor} </td>
-                    <td>${libro.precio}$ </td>
+                    <td>${libro.precio} $ </td>
                     <td><img src="${libro.url_imagen}.jpg" alt="imagen" class = "img_libro"></td>
                 </tr>
                 `
