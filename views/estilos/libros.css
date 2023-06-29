@@ -1,58 +1,153 @@
-
-body{
-    font-size:1.5rem;
+body {
+    font-size: 1.5rem;
     font-family: 'Roboto Slab', serif;
     background-color: rgb(105, 105, 105);
 }
 
-.nav{
+.nav {
     display: flex;
     height: 3rem;
     background-color: rgba(0, 0, 0, 0.863);
-    
+
 }
 
-.nav a{
+.nav a {
     padding: 10px;
     text-decoration: none;
     color: rgba(248, 252, 255, 0.842);
     align-self: center;
 }
 
-.main{
-    display: flex;
-    justify-content: center;
+.main {
+    max-height: calc(100vh - 3rem - 2.5rem);
+    overflow-y: auto;
 }
 
-table{
-    margin-top: 40px;
+table {
+    /*margin-top: 40px;*/
     font-size: 1rem;
     text-align: center;
     border-collapse: collapse;
-    width: 50%;
+    /*width: 50%;*/
+    width: 100%;
     border: solid 2px black
 }
 
-th, td{
+th,
+td {
     padding: 5px;
 }
 
-thead{
+thead {
     background-color: #246355;
     border-bottom: solid 3px #0F362D;
     color: white;
 }
 
+thead tr {
+    position: sticky;
+    background-color: #246355;
+    top: 0;
+    z-index: 1;
+}
 
-tbody{
+
+tbody {
     background-color: white;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
     background-color: #ddd;
 }
 
-tr:hover td{
+tr:hover td {
     background-color: #369681;
     color: white;
+}
+
+.img_libro {
+    width: 100px;
+    border: 3px solid black;
+}
+
+
+footer {
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.863);
+    text-align: center;
+}
+
+.iconos{
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.icono{
+    display: inline-flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+
+    transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+
+.icono:hover{
+    outline-offset: 2px;
+}
+
+.icono i{
+    margin:auto;
+}
+
+.icono:hover i {
+	animation: shake 0.25s;
+}
+
+.icono--ig:hover{
+    background-image: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	outline-color: #a02d76;
+}
+
+.icono--twitter:hover {
+	background-color: #1da1f2;
+	outline-color: #1da1f2;
+}
+
+.icono--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+
+.icono--github:hover {
+	background-color: #2ea44f;
+	outline-color: #2ea44f;
+}
+
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
 }

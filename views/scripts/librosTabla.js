@@ -1,6 +1,12 @@
 
-const dominio = `https://${window.location.host}/api/libros`
+let protocolo;
+if (window.location.protocol === "https:") {
+  protocolo = "https";
+} else {
+  protocolo = "http";
+}
 
+const dominio = `${protocolo}://${window.location.host}/api/libros`;
 
 fetch(dominio)
     .then(function (response) {
@@ -19,8 +25,8 @@ fetch(dominio)
                     <td>${libro.isbn} </td>
                     <td>${libro.nombre} </td>
                     <td>${libro.autor} </td>
-                    <td>${libro.precio} </td>
-                    <td><img src="${libro.url_imagen}.jpg" alt="imagen" width = "100px"></td>
+                    <td>${libro.precio}$ </td>
+                    <td><img src="${libro.url_imagen}.jpg" alt="imagen" class = "img_libro"></td>
                 </tr>
                 `
             //document.write(out);
