@@ -4,6 +4,7 @@ var conexion = require("../db.js")
 const router = Router();
 const path = require('path');
 
+/*
 conexion.connect((error) => {
     if (error) {
         console.error('Error al conectar a la base de datos: ', error);
@@ -11,6 +12,7 @@ conexion.connect((error) => {
         console.log('Conexión exitosa a la base de datos');
     }
 });
+*/
 
 
 //Prueba
