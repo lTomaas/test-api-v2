@@ -7,7 +7,6 @@ fetch(`http://${window.location.host}/api/libros`)
         return response.json();
     })
     .then(function (libros) {
-        document.write("Holaaa");
         let tabla = document.getElementById("tabla-libros");
         let out = "";
 
@@ -21,6 +20,7 @@ fetch(`http://${window.location.host}/api/libros`)
                     <td><img src="${libro.url_imagen}.jpg" alt="imagen" width = "100px"></td>
                 </tr>
                 `
+            document.write(out);
                 //images/books/${libro.url_imagen}.png
                 //<td><img src="book-1.jpg" alt="imagen" width = "10px"></td>
         }
