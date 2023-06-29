@@ -1,6 +1,7 @@
 
 const dominio = window.location.hostname;
 
+document.write(`http://${window.location.host}/api/libros`)
 
 fetch(`http://${window.location.host}/api/libros`)
     .then(function (response) {
