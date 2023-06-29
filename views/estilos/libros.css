@@ -1,3 +1,8 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 200%; 
+}
+
 body {
     margin: 0;
     font-size: 1.5rem;
