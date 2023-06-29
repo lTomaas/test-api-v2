@@ -17,11 +17,10 @@ fetch(`http://${window.location.host}/api/libros`)
                     <td>${libro.nombre} </td>
                     <td>${libro.autor} </td>
                     <td>${libro.precio} </td>
-                    <td><img src="${libro.url_imagen}.jpg" alt="imagen" width = "100px"></td>
                 </tr>
                 `
-            document.write(out);
-                //images/books/${libro.url_imagen}.png
+            //document.write(out);
+                //<td><img src="${libro.url_imagen}.jpg" alt="imagen" width = "100px"></td>
                 //<td><img src="book-1.jpg" alt="imagen" width = "10px"></td>
         }
         tabla.innerHTML = out;
