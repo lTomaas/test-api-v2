@@ -1,13 +1,13 @@
 
 const dominio = window.location.hostname;
 
-document.write(`http://${window.location.host}/api/libros`)
 
 fetch(`http://${window.location.host}/api/libros`)
     .then(function (response) {
         return response.json();
     })
     .then(function (libros) {
+        document.write("Holaaa");
         let tabla = document.getElementById("tabla-libros");
         let out = "";
 
