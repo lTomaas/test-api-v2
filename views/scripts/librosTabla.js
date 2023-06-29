@@ -1,5 +1,5 @@
 
-const dominio = "https://"+ window.location.host + "/api/libros"
+const dominio = `https://${window.location.host}/api/libros`
 
 
 //document.write(dominio);
