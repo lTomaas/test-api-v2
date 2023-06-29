@@ -2,11 +2,11 @@
 const dominio = "https://"+ window.location.host + "/api/libros"
 
 
-document.write(dominio);
+//document.write(dominio);
 
 fetch(dominio)
     .then(function (response) {
-        document.write("fetch");
+        //document.write("fetch");
         return response.json();
     })
 
