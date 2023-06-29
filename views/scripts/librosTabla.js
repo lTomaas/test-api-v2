@@ -6,8 +6,8 @@ document.write(dominio);
 
 fetch(dominio)
     .then(function (response) {
+        document.write("fetch");
         return response.json();
-        document.write(`http://${window.location.host}/api/libros`)
     })
 
 
